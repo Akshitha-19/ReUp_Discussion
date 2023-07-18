@@ -13,7 +13,7 @@ Original file is located at
 
 # Collecting stock data from different sources for traning our model
 #Importing required libraries
-import pandas_datareader as pdr
+#import pandas_datareader as pdr
 
 #Source-1 from tiingo
 source1 = pdr.get_data_tiingo('AMZN', api_key="661114a49cd0ecde2c565ef415c31d41b2888ee4")
