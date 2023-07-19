@@ -80,8 +80,8 @@ print(source3.head())
 """# **Data Merging**"""
 
 # Merge all the frames and for duplicate data using average
-data = pd.concat([source1, source2_updated])
-data = pd.concat([data, source3])
+data1 = pd.concat([source1, source2_updated])
+data = pd.concat([data1, source3])
 data.index = pd.to_datetime(data.index)
 # Group by the index (assuming the index is the date)
 data = data.groupby(data.index).mean()
